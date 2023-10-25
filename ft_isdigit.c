@@ -11,25 +11,25 @@
 /* ************************************************************************** */
 /*#include <stdio.h>*/
 
-int ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
-    if (c >= '0' && c <= '9')
-        return (1);
-    else
-        return (0);
+	if (c >= 48 && c <= 57)
+		return (1);
+	else
+		return (0);
 }
-/*
-int main(void)
+
+/*int main(void)
 {
-    char    d;
+    int    d;
     d = '4';
-    char    e;
+    int    e;
     e = '+';
-    char    f;
+    int    f;
     f = ' ';
-    char    g;
+    int    g;
     g = '$';
-    char    h;
+    int    h;
     h = 'z';
 
     printf("%i\n", ft_isdigit(d));

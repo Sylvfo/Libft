@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sforster <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/24 14:44:17 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/24 14:44:19 by sforster         ###   ########.fr       */
+/*   Created: 2023/10/25 13:26:25 by sforster          #+#    #+#             */
+/*   Updated: 2023/10/25 13:29:17 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*#include <stdio.h>*/
 
-int	ft_isascii(int c)
+#include <string.h>
+
+int ft_memset(void *b, int c, size_t len)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	else
-		return (0);
+	
 }
-
-/*int main(void)
-{
-    int a;
-    a = '1';
-
-    printf("%i\n", ft_isascii(a));
-}*/
