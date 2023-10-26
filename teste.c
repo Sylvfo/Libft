@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   teste.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/26 15:37:30 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/26 15:37:30 by marvin           ###   ########.fr       */
+/*   Created: 2023/10/26 15:54:16 by marvin            #+#    #+#             */
+/*   Updated: 2023/10/26 15:54:16 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-/*#include <stdio.h>*/
+#include <stdio.h>
+#include <string.h>
 
-char *ft_strchr(const char *s, int c)
+int main(void) 
 {
-    int i;
+    const char *str = "Bonjour, monde !";
+    char c = 'z';
+    char *ptr = strchr(str, c);
 
-    i = 0;
-    while (s[i])
-    {
-        if (s[i] == (unsigned char) c)
-            return ((char *) s + i);
-        i++;
+    if (ptr != NULL) {
+        printf("Le caractère '%c' a été trouvé à la position %ld dans la chaîne.\n", c, ptr - str);
+    } else {
+        printf("Le caractère '%c' n'a pas été trouvé dans la chaîne.\n", c);
     }
-    return (NULL);
 
-}
-
-/*int main(void)
-{
-    const char *str = "Salut toi!";
-
-    printf("%s", ft_strchr(str, 'z'));
     return (0);
-}*/
+}

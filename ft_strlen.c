@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sforster <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:44:57 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/24 14:45:01 by sforster         ###   ########.fr       */
+/*   Updated: 2023/10/26 16:46:07 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*#include <stdio.h>*/
 #include ¨libft.h¨
 
 int	ft_strlen(const char *str)
@@ -25,7 +25,7 @@ int	ft_strlen(const char *str)
 	return (i);
 }
 
-int	main(void)
+/*int	main(void)
 {
     const char	  *d;
     d = "Hello";
@@ -43,4 +43,4 @@ int	main(void)
     printf("%i\n", ft_strlen(f));
     printf("%i\n", ft_strlen(g));
     printf("%i\n", ft_strlen(h));
-}
+}*/
