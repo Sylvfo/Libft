@@ -13,17 +13,15 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void) 
-{
-    const char *str = "Bonjour, monde !";
-    char c = 'z';
-    char *ptr = strchr(str, c);
-
-    if (ptr != NULL) {
-        printf("Le caractère '%c' a été trouvé à la position %ld dans la chaîne.\n", c, ptr - str);
-    } else {
-        printf("Le caractère '%c' n'a pas été trouvé dans la chaîne.\n", c);
-    }
-
-    return (0);
+int main() {
+    char data[] = "Hello, World!";
+    char buffer[10];
+    
+    // Copy 13 bytes from data to buffer, even if they overlap
+    memmove(buffer, data, 12);
+    
+    printf("Copied string: %s\n", buffer);
+    
+    return 0;
 }
+
