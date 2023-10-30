@@ -6,12 +6,12 @@
 /*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:44:57 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/27 14:01:05 by sforster         ###   ########.fr       */
+/*   Updated: 2023/10/30 14:50:23 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <stdio.h>*/
-#include ¨libft.h¨
+#include "libft.h"
 
 int	ft_strlen(const char *str)
 {

@@ -6,36 +6,35 @@
 /*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 17:43:57 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/27 18:21:47 by sforster         ###   ########.fr       */
+/*   Updated: 2023/10/30 14:50:14 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "libft.h"
 
-int	ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while(i < n && ((const char *)src)[i]!= '\0')
+	while (i < n)
 	{
 		((char *)dst)[i] = ((const char *)src)[i];
 		i++;
 	}
-	((char *)dst)[i] = '\0';
-	i++;
-	return (i);
+	return (dst);
 }
-
-int main(void)
+/*
+int	main(void)
 {
-	char	dest[25];
-	char	sour[] = "soledad ";
+	char	dest[25] = "Bonjour";
+	char	sour[] = "sole";
 
-	printf("%i\n%s\n", ft_memcpy(dest, sour, 13), dest);
+	printf("%s\n%s\n", ft_memcpy(dest, sour, 4), dest);
 	return (0);
 }
-
+*/
 /*
 
 		if (src[i] == (const void *)'\0')

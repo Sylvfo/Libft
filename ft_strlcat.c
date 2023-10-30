@@ -6,11 +6,12 @@
 /*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 10:25:49 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/27 11:28:25 by sforster         ###   ########.fr       */
+/*   Updated: 2023/10/30 16:11:56 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "libft.h"
 
 unsigned int	ft_lenstr(const char *str)
 {
@@ -41,6 +42,7 @@ unsigned int	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (i + 1);
 }
 
+/*
 int	main(void)
 {
 	char	dest[] = "Salut ";
@@ -51,4 +53,4 @@ int	main(void)
 	char	hu[] = "Tu es parti en amerique";
 	printf("deuxieme %u\n", ft_strlcat(dd, hu, 20));
 	return (0);
-}
+}*/

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include ¨libft.h¨
+#include "libft.h"
 /*#include <stdio.h>*/
 
 int	ft_strlen(const char *str)
@@ -25,18 +25,18 @@ int	ft_strlen(const char *str)
 	return (i);
 }
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    int a;
+	int a;
 
-    a = ft_strlen(s);
-    while (a >= 0)
-    {
-        if (s[a] == c)
-            return ((char*) s + a);
-        a--;
-    }
-    return (NULL);
+	a = ft_strlen(s);
+	while (a >= 0)
+	{
+		if (s[a] == c)
+			return ((char*) s + a);
+		a--;
+	}
+	return (NULL);
 }
 
 /*int main(void)
