@@ -27,13 +27,13 @@ int	ft_strlen(const char *str)
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int a;
+	int	a;
 
 	a = ft_strlen(s);
 	while (a >= 0)
 	{
 		if (s[a] == c)
-			return ((char*) s + a);
+			return ((char *) s + a);
 		a--;
 	}
 	return (NULL);

@@ -6,7 +6,7 @@
 #    By: sforster <sforster@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/30 10:50:32 by sforster          #+#    #+#              #
-#    Updated: 2023/10/30 14:44:11 by sforster         ###   ########.fr        #
+#    Updated: 2023/10/31 16:59:38 by sforster         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ SRCS	=	ft_isalpha.c	ft_isdigit.c	ft_isalnum.c\
 			ft_bzero.c	ft_memcpy.c	ft_memmove.c	ft_strlcpy.c\
 			ft_strlcat.c	ft_toupper.c	ft_tolower.c	ft_strchr.c\
 			ft_strrchr.c	ft_strncmp.c	ft_memcmp.c	ft_strnstr.c\
-			ft_atoi.c	ft_calloc.c	ft_strdup.c
+			ft_atoi.c	ft_calloc.c	ft_strdup.c	ft_memchr.c	ft_memcmp.c
 NAME	=	libft.a
 
 CC		=	gcc
@@ -26,14 +26,16 @@ OBJ		=	$(SRCS:.c=.o)
 
 all:	$(NAME)
 
+re:		fclean $(NAME)
+
 $(NAME):	$(OBJ)
 				ar	rcs	$(NAME)	$(OBJ)
+				ranlib $(NAME)
 
 clean:
-		$(RM) $(OBJ)
+			$(RM) $(OBJ)
 
-fclean:
-		clean
-			$(RM) $(NAME)
+fclean:		clean
+				$(RM) $(NAME)
 
-.PHONY:	clean	clean
+.PHONY:		all re clean fclean bin

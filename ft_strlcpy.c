@@ -6,7 +6,7 @@
 /*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 16:08:21 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/30 16:18:35 by sforster         ###   ########.fr       */
+/*   Updated: 2023/10/31 16:59:31 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,35 +23,65 @@ int	ft_strlen(const char *str)
 	return (i);
 }
 
-int	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int	i;
-	int sizesrc;
+	size_t		i;
+	char		*dest;
+	char		*sour;
 
-	sizesrc = ft_strlen(src);
+	if (!dst || !src)
+		return (NULL);
+	dest = (char *)dst;
+	sour = (char *)src;
 	i = 0;
-	while (i < sizesrc - 1 && i < (int)dstsize)
+	if (dest > sour)
 	{
-			dst[i] = src[i];
-			i++;
+		while (len-- > 0)
+			dest[len] = sour[len];
 	}
-	dst[i] = '\0';
-	return (i);
+	else
+	{
+		while (i < len)
+		{
+			dest[i] = sour[i];
+			i++;
+		}	
+	}
+	return (dst);
 }
 
+int	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+{
+	size_t	sizesrc;
+
+	sizesrc = ft_strlen(src);
+	if (sizesrc + 1 < dstsize)
+	{
+		ft_memmove(dst, src, sizesrc + 1);
+	}
+	else if (dstsize != 0)
+	{
+		ft_memmove(dst, src, dstsize - 1);
+		dst[dstsize - 1] = '\0';
+	}
+	return (sizesrc);
+}
+
+/*
 int	main(void)
 {
 	char	dest[] = "Salut  toi";
 	char	src[] = "Je crois que je suis parti la bas";
-	printf("premiere %u %s\n", ft_strlcpy(dest, src, 5), dest);
+	printf("premiere %u %s\n", ft_strlcpy(dest, src, 8), dest);
 	
 	char	dd[] = "Hello bonjour";
 	char	hu[] = "Tu e";
-	printf("deuxieme %u %s\n", ft_strlcpy(dd, hu, 8), dd);
+	printf("deuxieme %u %s\n", ft_strlcpy(dd, hu, 12), dd);
 	return (0);	
 }
 
-/*int	ft_strlen(int *str)
+
+int	ft_strlen(int *str)
 {
 	int	i;
 
@@ -61,29 +91,4 @@ int	main(void)
 	return (i);
 }
 
-unsigned int	ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize)
-{
-	int	i;
-
-	i = 0;
-	if (ft_strlen((int*)dstsize) == 0)
-		return ('NULL');
-	while(src[i])
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	return (i);
-}
-
-int	main(void)
-{
-	char	dest[] = "Salut  toi";
-	char	src[] = "Je crois que je suis parti la bas";
-	printf("premiere %u %s\n", ft_strlcpy(dest, src, 5), dest);
-	
-	char	dd[] = "Hello bonjour";
-	char	hu[] = "Tu es parti en amerique";
-	printf("deuxieme %u\n", ft_strlcpy(dd, hu, 10));
-	return (0);	
 }*/

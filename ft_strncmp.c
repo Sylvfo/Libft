@@ -13,25 +13,26 @@
 /*#include <stdio.h>*/
 #include "libc.h"
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
-	while (i < (int)n)
+	while (i < n && (s1[i] || s2[i]))
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+		if ((unsigned char)s1[i] != (unsigned char)s2[i])
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		i++;
 	}
 	return (0);
 }
 
-/*int main(void)
+/*
+int main(void)
 {
-    const char *str1 = "Ours";
-    const char *str2 = "Outa";
+    const char *str1 = "\200";
+    const char *str2 = "\0";
 
-    printf("%d", ft_strncmp(str1, str2, 2));
+    printf("%d", ft_strncmp(str1, str2, 4));
     return (0);
 }*/

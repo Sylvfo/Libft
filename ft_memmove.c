@@ -6,7 +6,7 @@
 /*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 17:53:18 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/30 16:13:39 by sforster         ###   ########.fr       */
+/*   Updated: 2023/10/31 16:59:28 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,27 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	while (len--)
+	size_t		i;
+	char		*dest;
+	char		*sour;
+
+	if (!dst || !src)
+		return (NULL);
+	dest = (char *)dst;
+	sour = (char *)src;
+	i = 0;
+	if (dest > sour)
 	{
-		((char *)dst)[len] = ((const char *)src)[len];
+		while (len-- > 0)
+			dest[len] = sour[len];
+	}
+	else
+	{
+		while (i < len)
+		{
+			dest[i] = sour[i];
+			i++;
+		}	
 	}
 	return (dst);
 }
@@ -25,10 +43,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 /*
 int	main(void)
 {
-void	*tal = "holala";
-void	*al = "salut";
+	char	tal[] = "holala";
+	char	al[] = "salut";
 
-printf("%s\n", ft_memmove(tal, al, 4));
+printf("%s\n", ft_memmove(tal, al, 2));
 return (0);
-}
-*/
+}*/
