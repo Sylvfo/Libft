@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 13:32:00 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/31 16:59:34 by sforster         ###   ########.fr       */
+/*   Updated: 2023/11/01 16:08:35 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ const char	*ft_strnstr(const char *hays, const char *needle, size_t l)
 			if (needle[a] != hays[i + a])
 				break ;
 		}
-	a = 0;
-	i++;
+		a = 0;
+		i++;
 	}
 	return (NULL);
 }

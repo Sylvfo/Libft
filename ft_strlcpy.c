@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 16:08:21 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/31 16:59:31 by sforster         ###   ########.fr       */
+/*   Updated: 2023/11/01 16:08:11 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		{
 			dest[i] = sour[i];
 			i++;
-		}	
+		}
 	}
 	return (dst);
 }
