@@ -17,10 +17,26 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
+	char	*dst;
 
+	dst = (char *)malloc(len * sizeof(char));
+	if (!dst)
+		return (NULL);
 	i = 0;
-	while (i > len)
+	while (i < len)
 	{
-		
+		dst[i] = s[(size_t)start];
+		i++;
+		start++;
 	}
+	return (dst);
 }
+
+/*
+int	main(void)
+{
+	char const		ta[] = "Il pleut beaucoup ces temps";
+
+	printf("%s\n", ft_substr(ta, 0, 0));
+	return (0);
+}*/
