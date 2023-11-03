@@ -1,19 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 11:49:16 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/03 10:56:45 by sforster         ###   ########.fr       */
+/*   Created: 2023/11/03 15:20:35 by sforster          #+#    #+#             */
+/*   Updated: 2023/11/03 15:34:49 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_strlen(const char *str)
 {
@@ -25,39 +23,18 @@ int	ft_strlen(const char *str)
 	return (i);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*dst;
 	int		i;
-	int		j;
+	char	*str;
 
 	i = 0;
-	j = ft_strlen(s1);
-	dst = (char *)malloc((j + ft_strlen(s2) + 1) * sizeof(char));
-	if (!dst)
-		return (NULL);
-	while (s1[i])
+	str = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
+	while (s[i])
 	{
-		dst[i] = (char)s1[i];
+		str[i] = f(i, s[i]);
 		i++;
 	}
-	i = 0;
-	while (s2[i])
-	{
-		dst[j] = (char)s2[i];
-		i++;
-		j++;
-	}
-	dst[j] = '\0';
-	return (dst);
+	str[i] = '\0';
+	return (str);
 }
-
-/*
-int	main(void)
-{
-	char const	a1[] = "Bien";
-	char const	a2[] = " joue! :)";
-
-	printf("%s\n", ft_strjoin(a1, a2));
-	return (0);
-}*/

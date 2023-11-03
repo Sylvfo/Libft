@@ -1,47 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/27 13:32:00 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/03 10:36:59 by sforster         ###   ########.fr       */
+/*   Created: 2023/11/03 16:19:47 by sforster          #+#    #+#             */
+/*   Updated: 2023/11/03 16:31:46 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-int	ft_strlen(const char *str)
+void	ft_putnbr_fd(int n, int fd)
 {
-	int	i;
+	unsigned int	un;
+	char			*num;
+	unsigned int	i;
 
 	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-char	*ft_strnstr(const char *hays, const char *needle, size_t l)
-{
-	size_t	i;
-	size_t	j;
-
-	j = 0;
-	i = 0;
-	if (ft_strlen(needle) == 0)
-		return ((char *)hays);
-	while (hays[i] && i < l)
+	if (n < 0)
+		write (fd, "-", 1);
+	un = n;
+	while (un != 0)
 	{
-		while (hays[i + j] == needle[j] && hays[i + j] && i + j < l)
-		{
-			j++;
-			if (needle[j] == 0)
-				return ((char *)hays + i);
-		}
-		i++;
-		j = 0;
+		num[i -1] = (un % 10) + '0';
+		un = un / 10;
+		i--;
 	}
-	return (NULL);
+	i = 0;
+	while (num[i])
+	{
+		write (fd, num[i], 1);
+		i++;
+	}
 }
