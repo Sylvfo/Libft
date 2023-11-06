@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:04:12 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 15:28:50 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/06 17:18:35 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,16 @@ static int	wordcount(char const *s, char c)
 
 	co = 0;
 	i = 0;
-	while (s[i])
+	while (*s)
 	{
-		if ((char)s[i] == c)
+		if (*s != c && i == 0)
+		{
+			i = 1;
 			co++;
-		i++;
+		}
+		else if (*s == c)
+			i = 0;
+		s++;
 	}
 	return (co);
 }
@@ -48,7 +53,7 @@ static char	*ft_mot(const char *str, int start, int end)
 	char	*mot;
 
 	i = 0;
-	mot = malloc((end - start + 1) * sizeof(char));
+	mot = malloc(((end - start) + 1) * sizeof(char));
 	if (!mot)
 		return (NULL);
 	while (start < end)
@@ -57,7 +62,7 @@ static char	*ft_mot(const char *str, int start, int end)
 		i++;
 		start++;
 	}
-	mot[i] = 0;
+	mot[i] = '\0';
 	return (mot);
 }
 
@@ -139,5 +144,21 @@ char	**ft_split(char const *s, char c)
 		i++;
 	}
 	return (tab);
+}
+
+static int	wordcount(char const *s, char c)
+{
+	int	co;
+	int	i;
+
+	co = 0;
+	i = 0;
+	while (s[i])
+	{
+		if ((char)s[i] == c)
+			co++;
+		i++;
+	}
+	return (co);
 }
 */

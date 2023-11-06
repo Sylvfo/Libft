@@ -3,85 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 17:04:32 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/03 13:23:37 by sforster         ###   ########.fr       */
+/*   Updated: 2023/11/06 17:18:52 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
-
-char	*ft_strchr(const char *s, int c)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		if (s[i] == (unsigned char) c)
-			return ((char *) s + i);
-		i++;
-	}
-	if (s[i] == (unsigned char) c)
-		return ((char *) s + i);
-	return (NULL);
-}
-
-void	*ft_memmove(void *dst, const void *src, size_t len)
-{
-	size_t		i;
-	char		*dest;
-	char		*sour;
-
-	if (!dst || !src)
-		return (NULL);
-	dest = (char *)dst;
-	sour = (char *)src;
-	i = 0;
-	if (dest > sour)
-	{
-		while (len-- > 0)
-			dest[len] = sour[len];
-	}
-	else
-	{
-		while (i < len)
-		{
-			dest[i] = sour[i];
-			i++;
-		}
-	}
-	return (dst);
-}
-
-int	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-int	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-	size_t	sizesrc;
-
-	sizesrc = ft_strlen(src);
-	if (sizesrc + 1 < dstsize)
-	{
-		ft_memmove(dst, src, sizesrc + 1);
-	}
-	else if (dstsize != 0)
-	{
-		ft_memmove(dst, src, dstsize - 1);
-		dst[dstsize - 1] = '\0';
-	}
-	return (sizesrc);
-}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
