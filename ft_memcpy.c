@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/27 17:43:57 by sforster          #+#    #+#             */
-/*   Updated: 2023/10/31 16:59:27 by sforster         ###   ########.fr       */
+/*   Created: 2023/10/25 17:43:00 by marvin            #+#    #+#             */
+/*   Updated: 2023/10/25 17:43:00 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
 /*
 int	main(void)
 {
@@ -33,9 +34,4 @@ int	main(void)
 
 	printf("%s\n%s\n", ft_memcpy(dest, sour, 4), dest);
 	return (0);
-}
-*/
-/*
-
-		if (src[i] == (const void *)'\0')
-		est-ce qu il faut rajouter un i en plus?? */
+}*/
