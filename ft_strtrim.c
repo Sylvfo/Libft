@@ -3,15 +3,45 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 17:04:32 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:52 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 11:19:30 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	i;
+
+	if (!s1 || !set)
+		return (0);
+	while (*s1 && ft_strchr(set, *s1))
+		s1++;
+	i = ft_strlen(s1);
+	while (i && ft_strchr(set, s1[i]))
+		i--;
+	return (ft_substr(s1, 0, i + 1));
+}
+
+/*
+int	main(void)
+{
+	printf("%s\n", ft_strtrim("", ""));
+}
+
+
+int	main(void)
+{
+	char const	sl[] = "";
+	char const	st[] = "";
+
+	printf("%s\n", ft_strtrim(sl, st));
+	return (0);
+}
+
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -19,29 +49,23 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		j;
 	char	*res;
 
-	i = 0;
-	j = ft_strlen(s1);
 	res = 0;
-	if (s1 != 0 && set != 0)
+	if (!s1)
+		res = ft_strdup(0);
+	if (!set)
+		res = (ft_strdup(s1));
+	if ((s1 != 0) && (set != 0))
 	{
+		i = 0;
+		j = ft_strlen(s1);
 		while (s1[i] && ft_strchr(set, s1[i]))
 			i++;
 		while (s1[j - 1] && ft_strchr(set, s1[j - 1]) && j > i)
 			j--;
 		res = (char *)malloc((j - i + 1) * sizeof(char));
-		if (!res)
-			return (NULL);
-		ft_strlcpy(res, &s1[i], (j - i + 1));
+		if (res)
+			ft_strlcpy(res, &s1[i], (j - i + 1));
 	}
 	return (res);
-}
-/*
-int	main(void)
-{
-	char const	sl[] = "etteejejeclotecptetteeet";
-	char const	st[] = "et";
-
-	printf("%s\n", ft_strtrim(sl, st));
-	return (0);
 }
 */
