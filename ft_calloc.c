@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// manipulate memory
+// alloue taille memoire remplie de zero (contrairement a malloc)
+
 #include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)

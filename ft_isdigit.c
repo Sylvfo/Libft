@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:40:57 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:22 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:48:37 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// check and manipulate character
+// verifie si (c) est un chiffre dans ascii
 
 #include "libft.h"
 

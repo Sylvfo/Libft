@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/01 17:15:43 by marvin            #+#    #+#             */
-/*   Updated: 2023/11/01 17:15:43 by marvin           ###   ########.fr       */
+/*   Created: 2023/11/07 13:56:34 by sforster          #+#    #+#             */
+/*   Updated: 2023/11/07 13:56:34 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//manipulate string
+// retour une string prise des start dans string (s) de taille len
 
 #include "libft.h"
 

@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/26 15:32:40 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/26 15:32:40 by marvin           ###   ########.fr       */
+/*   Created: 2023/11/07 14:50:22 by sforster          #+#    #+#             */
+/*   Updated: 2023/11/07 14:50:22 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// manipulate string
+// recherche la derniere occurence d une char dans une string. 
+
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

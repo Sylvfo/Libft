@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/26 15:37:30 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/26 15:37:30 by marvin           ###   ########.fr       */
+/*   Created: 2023/11/07 14:49:25 by sforster          #+#    #+#             */
+/*   Updated: 2023/11/07 14:49:25 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate string
+// recherche 1ere occurence du charactere (c) dans une string (s)
+// comme memchr (dans un bloque de memoire) et strrchr (derniere occurence)
 
 #include "libft.h"
 /*#include <stdio.h>*/

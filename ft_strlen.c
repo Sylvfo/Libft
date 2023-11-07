@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:44:57 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:45 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:49:58 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate string
+// retourne la taille d une string
 
 #include "libft.h"
 

@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 10:25:49 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:41 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:49:53 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate string
+// concatene deux string max dstsize. retourne taille operation
+// retourne la taille de cette operation et non pas la string dest. 
+// l pour toujours NUL terminating. 
 
 #include "libft.h"
 

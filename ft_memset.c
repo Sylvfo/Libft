@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 13:26:25 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:29 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:49:08 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate memory
+// rempli la memoire de (s) avec char choisi (c) jusqu'a (len)  
+// idem que bzero mais on peut choisir caractere. 
 
 #include "libft.h"
 

@@ -6,9 +6,13 @@
 /*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 17:04:32 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/07 11:19:30 by sforster         ###   ########.fr       */
+/*   Updated: 2023/11/07 14:50:33 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//manipulate string
+// trim = tailler
+// enleve tous  les characteres du set au debut et a la fin de string s1
 
 #include "libft.h"
 

@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/26 16:46:56 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/26 16:46:56 by marvin           ###   ########.fr       */
+/*   Created: 2023/11/07 14:50:08 by sforster          #+#    #+#             */
+/*   Updated: 2023/11/07 14:50:08 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate string
+// compare 2 string jusqu a la taille n. ret 0, neg ou pos
+// retourne diff entre les premieres lettres qui sont differentes
+// n pour taille maximale. idem que memcmp mais string et prend '\0' en compte
 
 #include "libft.h"
 

@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 16:19:47 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:32 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:49:13 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// write to a file descriptor
+// ecrit un nombre int dans le (fd) file descriptor
 
 #include "libft.h"
 

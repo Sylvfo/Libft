@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 15:53:23 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:30 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:49:10 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// write to a file descriptor
+// ecrit un caractere dans le (fd) file descriptor
 
 #include <unistd.h>
 #include "libft.h"

@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 16:12:28 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:31 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:49:11 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// write to a file descriptor
+// comme putstr_fd, mais avec un aller a la ligne
 
 #include "libft.h"
 

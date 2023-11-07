@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 16:08:21 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:43 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:49:55 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// manipulate string
+// copie source dans la destination et retourne taille source
+// la source remplace la destination
+// l ca veut dire un zero a la fin
+
 #include "libft.h"
+#include <stdio.h>
 
 int	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -28,13 +34,12 @@ int	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (sizesrc);
 }
-
 /*
 int	main(void)
 {
-	char	dest[] = "Salut  toi";
-	char	src[] = "Je crois que je suis parti la bas";
-	printf("premiere %u %s\n", ft_strlcpy(dest, src, 8), dest);
+	char	dest[] = "Arbre ";
+	char	src[] = "Serpent a sonette";
+	printf("premiere %u %s\n", ft_strlcpy(dest, src, 78), dest);
 	
 	char	dd[] = "Hello bonjour";
 	char	hu[] = "Tu e";

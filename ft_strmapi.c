@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 15:20:35 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:46 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:50:01 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate string
+// applique une fonction a tous char d une string et retourne nouvelle string
+// liee a iteri. retourne le resultat sous forme de string
 
 #include "libft.h"
 

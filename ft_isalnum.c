@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:41:41 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:20 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:48:32 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// check and manipulate character
+// verifie si (c) est un chiffre ou une lettre dans ascii
 
 #include "libft.h"
 

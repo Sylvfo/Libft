@@ -6,9 +6,12 @@
 /*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 17:53:18 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/07 09:54:53 by sforster         ###   ########.fr       */
+/*   Updated: 2023/11/07 14:49:06 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate memory
+// Deplace (src) dans (dest) jusqu a (n)
 
 #include "libft.h"
 

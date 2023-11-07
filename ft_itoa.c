@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:07:13 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:24 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:48:41 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate number
+// integer to ascii. Converti un chiffre int (nb) en string de char.
 
 #include "libft.h"
 

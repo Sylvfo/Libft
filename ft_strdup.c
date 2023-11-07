@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/01 15:18:49 by marvin            #+#    #+#             */
-/*   Updated: 2023/11/01 15:18:49 by marvin           ###   ########.fr       */
+/*   Created: 2023/11/07 14:49:40 by sforster          #+#    #+#             */
+/*   Updated: 2023/11/07 14:49:40 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate memory
+// attribue memoire a une string (s) avec malloc
+// retour debut pointeur au debut de la memoire
 
 #include "libft.h"
 

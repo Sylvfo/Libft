@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 18:24:05 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:25 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:48:43 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate memory
+// cherche 1er (c) dans la taille (n) d un bloque de memoire (s)
+// difference avec strchr c est que ca s arrete pas a '\0'
+// unsigned char pour eviter des erreurs si char speciaux ascii-etendu
 
 #include "libft.h"
 

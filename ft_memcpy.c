@@ -10,6 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// manipulate memory
+// Copie (src) dans (dest) jusqu a (n)
+// pareil que strlcpy sauf ne prend pas '\0' en compte.  
+
 #include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)

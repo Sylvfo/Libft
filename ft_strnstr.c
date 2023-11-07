@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 13:32:00 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:49 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:50:16 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate string
+// cherche une aiguille string dans max l de botte de foin 
+// strchr idem mais il recherche seulement un char. 
 
 #include "libft.h"
 

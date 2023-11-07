@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:49:16 by sforster          #+#    #+#             */
-/*   Updated: 2023/11/06 17:18:40 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:49:50 by sforster         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// manipulate string
+// joint deux string (s1) et (s2) en gerant la memoire alloue
 
 #include "libft.h"
 
